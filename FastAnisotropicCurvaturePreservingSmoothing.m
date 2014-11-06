@@ -3,17 +3,21 @@ function [ mOutputImage ] = FastAnisotropicCurvaturePreservingSmoothing( mInputI
 % ----------------------------------------------------------------------------------------------- %
 % [ mOutputImage ] = FastAnisotropicCurvaturePreservingSmoothing( mInputImage, ...
 %    smoothingAmplitude, spatialPrecision, gradientSmoothness, tensorSmoothness )
-%   Applies the Fast Anisotropic Curvature Preserving Smoothing Input Image
+%   Applies the Fast Anisotropic Curvature Preserving Smoothing on an Input Image
 % Input:
 %   - mInputImage           -   Input image.
 %                               Matrix, 1 Channels, Floating Point, [0, 1]
-%   - localWinRadius        -   Local Window Radius.
+%   - smoothingAmplitude        -   Local Window Radius.
 %                               Scalar, Floating Point, {1, 2, ..., 10}.
-%   - localWinStd           -   Local Window Gaussian Kernel STD.
+%   - sharpnessLevel           -   Local Window Gaussian Kernel STD.
 %                               Scalar, Floating Point [0.1, 20].
-%   - searchWinRadius       -   Search Window Radius.
+%   - anisotropyLevel       -   Search Window Radius.
 %                               Scalar, Floating Point, {1, 2, ..., 10}.
-%   - weightsStd            -   Weights STD Factor.
+%   - gradientSmoothness            -   Weights STD Factor.
+%                               Scalar, Floating Point [0.1, 20].
+%   - tensorSmoothness            -   Weights STD Factor.
+%                               Scalar, Floating Point [0.1, 20].
+%   - stepSize            -   Weights STD Factor.
 %                               Scalar, Floating Point [0.1, 20].
 % Output:
 %   - mOutputImage          -   Input image.

@@ -1,17 +1,17 @@
 function [ tT ] = CalcImageStructureTensors( mInputImage, sharpnessLevel, anisotropyLevel, gradientSmoothness, tensorSmoothness )
 % ----------------------------------------------------------------------------------------------- %
 % [ tT ] = CalcImageStructureTensors( mInputImage, sharpnessLevel, anisotropyLevel, gradientSmoothness, tensorSmoothness )
-%   Applies the Non Local Means Filter on the Input Image
+%   Calculates the Image Structure Tensor
 % Input:
 %   - mInputImage           -   Input image.
 %                               Matrix, 1 Channels, Floating Point, [0, 1]
-%   - localWinRadius        -   Local Window Radius.
+%   - sharpnessLevel        -   Local Window Radius.
 %                               Scalar, Floating Point, {1, 2, ..., 10}.
-%   - localWinStd           -   Local Window Gaussian Kernel STD.
+%   - anisotropyLevel           -   Local Window Gaussian Kernel STD.
 %                               Scalar, Floating Point [0.1, 20].
-%   - searchWinRadius       -   Search Window Radius.
+%   - gradientSmoothness       -   Search Window Radius.
 %                               Scalar, Floating Point, {1, 2, ..., 10}.
-%   - weightsStd            -   Weights STD Factor.
+%   - tensorSmoothness            -   Weights STD Factor.
 %                               Scalar, Floating Point [0.1, 20].
 % Output:
 %   - mOutputImage          -   Input image.

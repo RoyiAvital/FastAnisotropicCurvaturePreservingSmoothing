@@ -1,21 +1,19 @@
-function [ mOutputImage ] = ImageLineIntegralConvolutions(mInputImage, tW, mLength, stepSize)
+function [ mOutputImage ] = ApplyImageLineIntegralConvolution(mInputImage, tW, mLength, stepSize)
 % ----------------------------------------------------------------------------------------------- %
-% [ mOutputImage ] = ImageLineIntegralConvolutions(mInputImage, tW, mLength, stepSize)
-%   Applies the Non Local Means Filter on the Input Image
+% [ mOutputImage ] = ApplyImageLineIntegralConvolution(mInputImage, tW, mLength, stepSize)
+%   Applies the Line Integral Convolution (LIC) on an image
 % Input:
-%   - mInputImage           -   Input image.
-%                               Matrix, 1 Channels, Floating Point, [0, 1]
-%   - localWinRadius        -   Local Window Radius.
-%                               Scalar, Floating Point, {1, 2, ..., 10}.
-%   - localWinStd           -   Local Window Gaussian Kernel STD.
-%                               Scalar, Floating Point [0.1, 20].
-%   - searchWinRadius       -   Search Window Radius.
-%                               Scalar, Floating Point, {1, 2, ..., 10}.
-%   - weightsStd            -   Weights STD Factor.
-%                               Scalar, Floating Point [0.1, 20].
+%   - mInputImage   -   Input image.
+%                       Matrix, 1 Channels, Floating Point, [0, 1]
+%   - tW            -   Vector Field Tensor.
+%                       Tensor, Floating Point, [].
+%   - mLength       -   ****
+%                       Scalar, Floating Point [].
+%   - stepSize      -   Discrete Integration Step Size.
+%                       Scalar, Floating Point, [].
 % Output:
-%   - mOutputImage          -   Input image.
-%                               Matrix, 1 Channels, Floating Point, [0, 1]
+%   - mOutputImage  -   Input image.
+%                       Matrix, 1 Channels, Floating Point, [0, 1]
 % Remarks:
 %   1.  Prefixes:
 %       -   't' - Tensor.
