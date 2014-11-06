@@ -4,7 +4,7 @@
 % Remarks:
 %   1.  This code is maintained in:
 %       *   https://github.com/RoyiAvital/Fast-Anisotropic-Curvature-Preserving-Smoothing
-%       *   "Add Matlab File Exchange Link".
+%       *   http://www.mathworks.com/matlabcentral/fileexchange/48369
 %   2.  Prefixes:
 %       -   't' - Tensor.
 %       -   'm' - Matrix.

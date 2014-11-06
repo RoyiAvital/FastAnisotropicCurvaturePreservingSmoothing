@@ -3,7 +3,7 @@ function [ mOutputImage ] = FastAnisotropicCurvaturePreservingSmoothing( mInputI
 % ----------------------------------------------------------------------------------------------- %
 % [ mOutputImage ] = FastAnisotropicCurvaturePreservingSmoothing( mInputImage, ...
 %    smoothingAmplitude, spatialPrecision, gradientSmoothness, tensorSmoothness )
-%   Applies the Non Local Means Filter on the Input Image
+%   Applies the Fast Anisotropic Curvature Preserving Smoothing Input Image
 % Input:
 %   - mInputImage           -   Input image.
 %                               Matrix, 1 Channels, Floating Point, [0, 1]

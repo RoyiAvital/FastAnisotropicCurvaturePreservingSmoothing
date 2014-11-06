@@ -1,7 +1,6 @@
 function [ tT ] = CalcImageStructureTensors( mInputImage, sharpnessLevel, anisotropyLevel, gradientSmoothness, tensorSmoothness )
 % ----------------------------------------------------------------------------------------------- %
-% [ mOutputImage ] = FastAnisotropicCurvaturePreservingSmoothing( mInputImage, ...
-%    smoothingAmplitude, spatialPrecision, gradientSmoothness, tensorSmoothness )
+% [ tT ] = CalcImageStructureTensors( mInputImage, sharpnessLevel, anisotropyLevel, gradientSmoothness, tensorSmoothness )
 %   Applies the Non Local Means Filter on the Input Image
 % Input:
 %   - mInputImage           -   Input image.

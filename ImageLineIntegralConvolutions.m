@@ -1,7 +1,6 @@
 function [ mOutputImage ] = ImageLineIntegralConvolutions(mInputImage, tW, mLength, stepSize)
 % ----------------------------------------------------------------------------------------------- %
-% [ mOutputImage ] = FastAnisotropicCurvaturePreservingSmoothing( mInputImage, ...
-%    smoothingAmplitude, spatialPrecision, gradientSmoothness, tensorSmoothness )
+% [ mOutputImage ] = ImageLineIntegralConvolutions(mInputImage, tW, mLength, stepSize)
 %   Applies the Non Local Means Filter on the Input Image
 % Input:
 %   - mInputImage           -   Input image.
