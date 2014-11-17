@@ -59,7 +59,7 @@ for fieldAngle = vAngles
 	mFsigma  = tTensorField(:, :, 3) * (sqrt(2 * smoothingAmplitude));
 	mLength = gaussianKernelPrecision * mFsigma;
 		
-    mOutputImage = mOutputImage + ImageLineIntegralConvolutions(mInputImage, tTensorField, mLength, stepSize);
+    mOutputImage = mOutputImage + ApplyImageLineIntegralConvolution(mInputImage, tTensorField, mLength, stepSize);
     
 end
 
