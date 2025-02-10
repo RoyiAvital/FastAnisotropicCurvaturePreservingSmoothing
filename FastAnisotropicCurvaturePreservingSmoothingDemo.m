@@ -16,9 +16,9 @@
 %       image.
 % TODO:
 %   1.  Move from images at the range [0, 255] to the range [0, 1].
-%   2.  Add support for more advanced interpolation mwrhods for the "LIC"
-%       pahse.
-%   3.  Insert teh angle discretezation level as an input parameter.
+%   2.  Add support for more advanced interpolation methods for the "LIC"
+%       phase.
+%   3.  Insert the angle discretezation level as an input parameter.
 %   4.  Add "numIterations" parameter.
 %   5.  Add the option to use Gaussian Weight Window for the LIC phase.
 %   6.  Add option to enable multi threaded operation (By choice).
