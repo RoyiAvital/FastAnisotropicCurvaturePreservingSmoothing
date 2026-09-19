@@ -1,0 +1,76 @@
+# Folders
+**/MPCACodes
+**/UMPCACodes
+# Ignore Work in Progress
+**/*WIP
+**/.vscode/*
+
+# Archive Files
+*.7z
+*.rar
+*.tar*
+*.zip
+
+# Binary Files
+*.exe
+
+# Media Files
+*.avi
+*.bmp
+*.jpg
+*.jpeg
+*.mp4
+*.png
+*.tif
+
+
+# Documnets
+*.doc
+*.docx
+#*.pdf
+*.ppt
+*.pptx
+*.psd
+*.xls
+*.xlsx
+
+# Julia
+**/Manifest.toml
+
+## TeX / LaTeX Files
+*.aux
+*.log
+*.synctex*
+*.toc
+*.out
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*eps-converted-to.pdf
+
+# Python Files
+*.npy
+*.npz
+*.pyc
+
+# MATLAB Files
+*.asv
+*.m~
+*.mat
+
+# Compilation files:
+*.obj
+*.pdb
+
+# Jupyter Files
+# See https://www.atlassian.com/git/tutorials/saving-changes/gitignore, https://stackoverflow.com/questions/8783093 and https://stackoverflow.com/a/36918878/195787
+**/.ipynb_checkpoints/
+
+# Output Figures Files
+Figure*.png
+
+# Temporary Files
+*TMP*.*
+*.drawio.bkp
